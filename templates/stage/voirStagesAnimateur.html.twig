@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello StageController!{% endblock %}
+
+{% block body %}
+<h1>Stages :</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">DateDébut</th>
+                <th scope="col">nbJours</th>
+                <th scope="col">Animateurs</th>
+            </tr>
+        </thead>
+    <tbody>
+
+            <tr class="table-active">
+                <td>{{ animateur.id }}</td>
+                <td>{{ animateur.nom }}</td>
+                <td>{{ animateur.prenom }}</td>
+                <td>{{ animateur.stages.getId() }}</td>
+            </tr>
+    </tbody>
+    </table>
+                
+{% endblock %}

@@ -1,0 +1,12 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+
+app_stage:
+    path: /stages
+    controller: App\Controller\StageController::voirTous
+
+app_stage_animateur:
+    path: /stages/{id}
+    controller: App\Controller\StageController::voirStagesAnimateur
